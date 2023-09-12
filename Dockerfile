@@ -1,5 +1,5 @@
 FROM python:3
-WORKDIR /app
+WORKDIR /megano/
 COPY requirements/base.txt requirements/base.txt
 RUN pip install --upgrade setuptools
 RUN pip install -r requirements/base.txt

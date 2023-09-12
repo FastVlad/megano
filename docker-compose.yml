@@ -20,7 +20,7 @@ services:
       - "5432:5432"
   bot:
     build: .
-    command: sh -c "make migrate && python -m market"
+    command: sh -c "python manage.py runserver"
     env_file:
       - ./.env
     restart: always
